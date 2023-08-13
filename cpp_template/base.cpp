@@ -2,10 +2,11 @@
 #define PB push_back
 #define MP make_pair
 
+using namespace std;
+
 typedef long long ll;
 typedef pair<int,int> ipair;
 
-using namespace std;
 
 int main() {
     // use incase of dealing with file for input/output
