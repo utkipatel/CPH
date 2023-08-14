@@ -27,5 +27,19 @@ int main() {
     freopen("input.txt", "r", stdin);
     freopen("output.txt", "w", stdout);
 
+    int n;
+    scanf("%d", &n);
+    vector<int> arr(n);
+    for(int i=0;i<n;i++) scanf("%d", &arr[i]);
+    int tot = 1<<n;
+    for(int b=0;b<tot;b++) {
+        vector<int> subset;
+        for(int i=0;i<n;i++) 
+            if(b&(1<<i)) subset.push_back(arr[i]);
+        for(int el:subset)
+            printf("%d ", el);
+        printf("\n");
+    }
+
     return 0;
 }

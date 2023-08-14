@@ -24,8 +24,18 @@ bool comp(ipair a, ipair b) {
 
 int main() {
     // use incase of dealing with file for input/output
-    freopen("input.txt", "r", stdin);
-    freopen("output.txt", "w", stdout);
+    // freopen("input.txt", "r", stdin);
+    // freopen("output.txt", "w", stdout);
+    int n;
+    scanf("%d", &n);
+    vector<int> permutations(n);
+    for(int i=0;i<n;i++) permutations[i] = i+1;
+
+    do{
+        for(int i:permutations) 
+            printf("%d ", i);
+        printf("\n");
+    } while(next_permutation(permutations.begin(), permutations.end()));
 
     return 0;
 }
