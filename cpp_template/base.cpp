@@ -24,8 +24,8 @@ bool comp(ipair a, ipair b) {
 
 int main() {
     // use incase of dealing with file for input/output
-    freopen("input.txt", "r", stdin);
-    freopen("output.txt", "w", stdout);
+    // freopen("input.txt", "r", stdin);
+    // freopen("output.txt", "w", stdout);
 
     return 0;
 }
